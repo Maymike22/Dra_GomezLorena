@@ -151,7 +151,7 @@ CSS
 /*----------------------------TAPIZ-----------------------------------------------*/
 body {
     /* 1. Define la imagen de fondo */
-    background-image: url("/iconos/fondo.png"); /* usar comillas o %20 */
+    background-image: url("https://maymike22.github.io/Dra_GomezLorena/iconos/fondo.png"); 
     /* 2. Propiedades para el efecto "tapiz" */
     background-repeat: repeat;
     background-size: auto;
