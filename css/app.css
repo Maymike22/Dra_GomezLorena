@@ -75,7 +75,7 @@ h1:focus {
     color: #ffffff;
     /* Grosor de la fuente */
     font-weight: 500;
-    /* Leve transiciÛn para efecto hover suave */
+    /* Leve transici√≥n para efecto hover suave */
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
@@ -83,17 +83,17 @@ h1:focus {
 .navbar-nav .bi {
     /* Color de los iconos por defecto (blanco) */
     color: #ffffff;
-    /* El tamaÒo del icono ya estaba en 1.5rem, lo mantengo */
+    /* El tama√±o del icono ya estaba en 1.5rem, lo mantengo */
     font-size: 1.5rem;
     /* Margen a la derecha del icono */
     margin-right: 0.5rem;
-    /* TransiciÛn de color en el icono */
+    /* Transici√≥n de color en el icono */
     transition: color 0.3s ease;
 }
 
-/* Asegurar que el icono tambiÈn cambie de color al hacer hover */
+/* Asegurar que el icono tambi√©n cambie de color al hacer hover */
 .navbar-nav .nav-link:hover .bi {
-    color: #FFD700; /* Dorado al pasar el ratÛn */
+    color: #FFD700; /* Dorado al pasar el rat√≥n */
 }
 
 /* Asegurar que el icono en el enlace activo sea Dorado */
@@ -103,7 +103,7 @@ h1:focus {
 
 
 CSS
-/* Estilo para el icono del botÛn s·ndwich en pantallas pequeÒas */
+/* Estilo para el icono del bot√≥n s√°ndwich en pantallas peque√±as */
 .navbar-toggler {
     /* Color de fondo del icono */
     background-color: transparent;
@@ -111,14 +111,14 @@ CSS
     border-color: #FFD700;
 }
 
-/* Estilo para las tres lÌneas del icono (navbar-toggler-icon) */
+/* Estilo para las tres l√≠neas del icono (navbar-toggler-icon) */
 .navbar-toggler-icon {
-    /* Es m·s complejo cambiar el color de este SVG, pero si usas el filtro CSS, el icono se vuelve m·s claro */
-    /* Este filtro es un intento de hacerlo m·s claro para que se vea */
+    /* Es m√°s complejo cambiar el color de este SVG, pero si usas el filtro CSS, el icono se vuelve m√°s claro */
+    /* Este filtro es un intento de hacerlo m√°s claro para que se vea */
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-/* Al abrir el men˙, tambiÈn podemos darle un estilo de enfoque */
+/* Al abrir el men√∫, tambi√©n podemos darle un estilo de enfoque */
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.5); /* Sombra dorada al hacer clic/tocar */
 }
@@ -129,29 +129,29 @@ CSS
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
 }
-/* Estilo al pasar el ratÛn (Hover) */
+/* Estilo al pasar el rat√≥n (Hover) */
 .navbar-nav .nav-link:hover {
     /* Cambiar el color a Dorado/Oro */
     color: #FFD700;
     /* Quitar el subrayado por defecto de Bootstrap si existe, ya que usaremos un borde */
     text-decoration: none;
 }
-/* Estilo para el enlace activo (la p·gina actual en Blazor) */
+/* Estilo para el enlace activo (la p√°gina actual en Blazor) */
 .navbar-nav .nav-link.active {
     /* Color de texto activo: Dorado brillante */
     color: #FFD700;
-    /* Borde inferior para resaltar la p·gina actual */
+    /* Borde inferior para resaltar la p√°gina actual */
     border-bottom: 3px solid #FFD700;
     /* Ajustar el padding para que el borde se vea bien */
     padding-bottom: calc(0.75rem - 3px); /* 0.75rem de padding menos el grosor del borde */
-    /* Forzar negrita para mayor distinciÛn */
+    /* Forzar negrita para mayor distinci√≥n */
     font-weight: 700;
 }
 
 /*----------------------------TAPIZ-----------------------------------------------*/
 body {
     /* 1. Define la imagen de fondo */
-    background-image: url("iconos/fondo.png"); /* usar comillas o %20 */
+    background-image: url("/iconos/fondo.png"); /* usar comillas o %20 */
     /* 2. Propiedades para el efecto "tapiz" */
     background-repeat: repeat;
     background-size: auto;
@@ -161,12 +161,12 @@ body {
 
 .logo-img {
     max-width: 500px; /* tope en pantallas grandes */
-    width: 100%; /* ocupa todo el ancho del contenedor en mÛviles */
+    width: 100%; /* ocupa todo el ancho del contenedor en m√≥viles */
     height: auto;
 }
 
 @media (max-width: 576px) {
     .logo-img {
-        max-width: 320px; /* opcional: tope menor en mÛviles muy pequeÒos */
+        max-width: 320px; /* opcional: tope menor en m√≥viles muy peque√±os */
     }
 }
